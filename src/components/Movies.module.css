@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1e2931dd;
+}
+h1 {
+  display: block;
+  font-family: "Creepster", cursive;
+  font-weight: 1000;
+  font-size: 80px;
+  color: rgb(39, 204, 187);
+  margin-right: 1rem;
+  margin-top: 2%;
+}
+h3 {
+  font-family: "Creepster", cursive;
+  color: rgb(39, 204, 187);
+  font-size: 2rem;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+#container {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+}
+.card {
+  width: 200px;
+  margin: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 4px rgb(35, 237, 187);
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgb(3, 249, 216);
+  border: 1px solid rgb(4, 172, 35);
+}
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-radius: 10px;
+}
+.card p {
+  color: rgb(5, 247, 219);
+  padding: 5px;
+}
+#input {
+  width: 30%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(15, 217, 173);
+  background-color: #1e2931dd;
+  caret-color: rgb(39, 204, 187);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: rgb(39, 204, 187);
+}
+@media (max-width: 400px) {
+  #input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  h1,
+  #input {
+    width: 80%;
+  }
+  .card {
+    width: 40%;
+  }
+}
